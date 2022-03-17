@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Pacifico&display=swap");
+:root {
+  --background-color: #ffffff;
+  --font-color: rgb(0, 0, 0);
+  --button-color: #fc6a43;
+  --buttonfont-color: #fff;
+  --navbuttonfocus-color: #263238;
+  --navbutton-color: #fff;
+  --navbuttonfont-color: rgb(0, 0, 0);
+  --search-color: #f0e5e2;
+  --searchfont-color: #000000;
+  --search-color-input: rgb(238, 223, 223);
+}
+.dark {
+  --background-color: #0c1015;
+  --font-color: rgb(255, 255, 255);
+  --button-color: #ffffff;
+  --buttonfont-color: rgb(0, 0, 0);
+  --navbuttonfocus-color: #263238;
+  --navbutton-color: #141921;
+  --navbuttonfont-color: rgb(255, 255, 255);
+  --search-color: #141921;
+  --searchfont-color: #757575;
+}
