@@ -172,7 +172,6 @@ body .back-bot {
 .move {
     display: flex;
     justify-content: center;
-    width: 95vw;
     padding-top: 1.5rem;
     overflow: visible;
     /* background-color: #FC6A43; */
@@ -214,7 +213,7 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 50rem;
-        height: 5rem;
+        height: 3rem;
         border-radius: 8px;
         background: var(--search-color-input);
         padding-left: 1rem;
