@@ -20,10 +20,10 @@
 
 ## The wireframes
 
-![image1](readme/1.jpg)
-![image2](readme/2.jpg)
-![image3](readme/3.jpg)
-![image4](readme/4.jpg)
+![image1](./Images/1.jpg)
+![image2](./Images/2.jpg)
+![image3](./Images/3.jpg)
+![image4](./Images/4.jpg)
 
 ## User Journey
 
