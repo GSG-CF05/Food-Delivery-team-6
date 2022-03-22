@@ -34,6 +34,13 @@
 body {
     /* margin: 0; */
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+.toggle-btn{
+    color: var(--font-color);
+}
+.carticon{
+    color: var(--font-color);
 }
 
 .header {
@@ -75,6 +82,7 @@ body .back-bot {
     font-family: 'League Gothic', sans-serif;
     font-family: 'Nunito', sans-serif;
     font-family: 'Pacifico', cursive;
+    color: var(--font-color);
 }
 
 .header-right {
@@ -86,6 +94,7 @@ body .back-bot {
     margin: auto;
     padding-left: 30px;
     font-size: 18px;
+    color: var(--font-color);
 }
 
 .navbar {
@@ -122,11 +131,11 @@ body .back-bot {
     margin: 5px;
     width: 30%;
     align-items: center;
-    background-color: rgba(240, 240, 240, 0.26);
     border: none;
     border-radius: 8px;
     box-sizing: border-box;
-    color: #000000;
+    color:var(--font-color);
+    background-color: var(--navbutton-color);
     cursor: pointer;
     display: flex;
     font-family: Inter, sans-serif;
@@ -164,9 +173,12 @@ body .back-bot {
     width: 19rem;
     height: 2rem;
     border-radius: 8px;
-    background: var(--search-color-input);
+    background-color: var(--search-color);
     padding-left: 1rem;
     padding-right: 1rem;
+}
+.input-icon i{
+    color: var(--searchfont-color);
 }
 
 .move {
@@ -186,6 +198,8 @@ body {
     height: 2rem;
     border: none;
     outline: none;
+    background-color: var(--search-color);
+    color: var(--font-color);
 }
 
 @media only screen and (min-width: 600px) {
@@ -215,7 +229,6 @@ body {
         width: 50rem;
         height: 3rem;
         border-radius: 8px;
-        background: var(--search-color-input);
         padding-left: 1rem;
         padding-right: 1rem;
     }
