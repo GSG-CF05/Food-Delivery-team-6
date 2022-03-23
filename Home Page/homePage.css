@@ -209,7 +209,7 @@ body {
   flex-direction: column;
 }
 
-.meal-list {
+.categories-list {
   display: flex;
   flex-wrap: wrap;
   border: none;
@@ -324,5 +324,9 @@ body {
     background: var(--search-color-input);
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .categories-list {
+    margin: 0 auto;
+    width: 1200px;
   }
 }
