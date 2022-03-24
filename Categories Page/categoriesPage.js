@@ -24,6 +24,8 @@ function meal() {
   if (app.firstChild) {
     app.removeChild(app.firstChild);
   }
+  let searchBox = (document.querySelector(".search-input").value = ""); //To remove anyText from search box
+
 
   let container = document.createElement("div");
   app.appendChild(container);
@@ -97,6 +99,8 @@ function meal() {
           counter++;
         }
       });
+      searchAbout();
+
     });
 }
 
@@ -182,6 +186,7 @@ function drink() {
           counter++;
         }
       });
+      searchAbout();
 
     });
 }
@@ -190,6 +195,7 @@ function dessert() {
   if (app.firstChild) {
     app.removeChild(app.firstChild);
   }
+  let searchBox = (document.querySelector(".search-input").value = ""); //To remove anyText from search box
 
   let container = document.createElement("div");
   app.appendChild(container);
@@ -263,6 +269,8 @@ function dessert() {
           counter++;
         }
       });
+      searchAbout();
+
     });
 }
 // open category function
@@ -334,4 +342,21 @@ function deleteFromLocalStorage(e) {
     }
   }
   localStorage.setItem("arrayLocal", JSON.stringify(arrayLocal));
+}
+function searchAbout() {
+  let searchBox = document.querySelector(".search-input");
+  let cards = document.querySelectorAll(".card");
+  for (let i = 0; i < cards.length; i++) {
+    let input = searchBox.value.toUpperCase();
+    if (
+      cards[i].firstChild.nextElementSibling.textContent
+        .toUpperCase()
+        .includes(input)
+    ) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+  searchBox.addEventListener("keyup", searchAbout);
 }
