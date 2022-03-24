@@ -6,7 +6,8 @@
 
 1. [Figma](https://www.figma.com/file/X96tSonYSExaHppt3NEHXz/Untitled?node-id=0%3A1)
 2. [Git hub pages]()
-3. [APIs Documentation]()
+3. [APIs Documentation](https://www.themealdb.com/api.php?fbclid=IwAR2VOQO_RqXwG8_5qHhR2DQUK0UL3oJHXMdc-PF2dJkg8n3VeftW0tB2G98)
+4. [APIs Documentation](https://www.themealdb.com/api.php?fbclid=IwAR2VOQO_RqXwG8_5qHhR2DQUK0UL3oJHXMdc-PF2dJkg8n3VeftW0tB2G98)
 
 ---
 
@@ -20,10 +21,10 @@
 
 ## The wireframes
 
-![image1](./Images/1.jpg)
-![image2](./Images/2.jpg)
-![image3](./Images/3.jpg)
-![image4](./Images/4.jpg)
+![image1](./imagesForReadmeFile/1.jpg)
+![image2](./imagesForReadmeFile/2.jpg)
+![image3](./imagesForReadmeFile/3.jpg)
+![image4](./imagesForReadmeFile/4.jpg)
 
 ## User Journey
 
