@@ -5,7 +5,7 @@
 ## Links
 
 1. [Figma](https://www.figma.com/file/X96tSonYSExaHppt3NEHXz/Untitled?node-id=0%3A1)
-2. [Git hub pages]()
+2. [Git hub pages](https://gsg-cf05.github.io/Food-Delivery-team-6/)
 3. [APIs Documentation](https://www.themealdb.com/api.php?fbclid=IwAR2VOQO_RqXwG8_5qHhR2DQUK0UL3oJHXMdc-PF2dJkg8n3VeftW0tB2G98)
 4. [APIs Documentation](https://www.themealdb.com/api.php?fbclid=IwAR2VOQO_RqXwG8_5qHhR2DQUK0UL3oJHXMdc-PF2dJkg8n3VeftW0tB2G98)
 
@@ -17,7 +17,7 @@
 
 ## Description of the app
 
-- Food delivery website that provides its customers with good hearty food, drinks, and dessert, user-friendly app allows users to order food quickly and easily at their own convenience, where the user can add them favoriate food to cart and do the payment method easily.
+- Food delivery website that provides its customers with good hearty food, drinks, and dessert, user-friendly app allows users to order food quickly and easily at their own convenience, where the user can add them favorite food to cart and do the payment method easily.
 
 ## The wireframes
 
@@ -30,7 +30,12 @@
 
 ---
 
-- first when the user open the website it show up the 3 slide show onboarding screens then go to the home page which is contian the top categories and the products, third is the cart page contains the product that the user added.
+- First when the user opens the app, the name of the app and slider which contain a 3 images and the Get Started button.
+- When the user click on Get Started button it take you to the home page for the app which contain the name for app and dark mode icon and cart icon.
+- When you tap on the cart icon it's take you to the cart page and 4 button and it's, all button thats button show to you tha catagories and the items that contain in every category.
+- The other three buttons will take you to the third page of the categories page according to the pressed button, whether drinks, meals or dessert.
+- Categories page that contains the search bar, you can search for any order you want and the list that the user has chosen and the items that each list contains.
+- The cart page contain the order that you required and the quantity and the total price and you can buy what you want
 
 ## User Stories
 
