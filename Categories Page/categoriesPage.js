@@ -92,7 +92,8 @@ function meal() {
           subBtn.style.display = "inline";
           subBtn.classList.add("sub-button"); //insert class to sub button
           card.appendChild(subBtn); // append sub btn to card
-
+          addBtn.addEventListener("click", saveToLocalStorage); //Add To local storage event
+          subBtn.addEventListener("click", deleteFromLocalStorage);
           counter++;
         }
       });
@@ -176,6 +177,8 @@ function drink() {
           subBtn.style.display = "inline";
           subBtn.classList.add("sub-button"); //insert class to subBtn
           card.appendChild(subBtn);
+          addBtn.addEventListener("click", saveToLocalStorage); //Add To local storage event
+          subBtn.addEventListener("click", deleteFromLocalStorage);
           counter++;
         }
       });
@@ -255,7 +258,8 @@ function dessert() {
           subBtn.style.display = "inline";
           subBtn.classList.add("sub-button"); //insert class to subBtn
           card.appendChild(subBtn);
-
+          addBtn.addEventListener("click", saveToLocalStorage); //Add To local storage event
+          subBtn.addEventListener("click", deleteFromLocalStorage);
           counter++;
         }
       });
@@ -268,4 +272,66 @@ if (page == "drinks") {
   dessert();
 } else {
   meal();
+}
+function saveToLocalStorage(e) {
+  let name =
+    e.target.parentElement.firstElementChild.nextElementSibling.textContent;
+  let price =
+    e.target.parentElement.firstElementChild.nextElementSibling
+      .nextElementSibling.nextElementSibling.textContent;
+  let image = e.target.parentElement.firstElementChild.src;
+  let quantity = e.target.nextElementSibling;
+  let num = parseInt(quantity.textContent);
+  num++;
+  quantity.textContent = num;
+  let arrayLocal = JSON.parse(localStorage.getItem("arrayLocal"));
+  if (arrayLocal != null) {
+    let dataObj = { name, price, image, num };
+    let flag = false;
+    let i = 0;
+    for (i = 0; i < arrayLocal.length; i++) {
+      if (arrayLocal[i].name == dataObj.name) {
+        flag = true;
+        break;
+      } else {
+        flag = false;
+      }
+    }
+    if (flag == true) {
+      arrayLocal[i].num =++arrayLocal[i].num; // if the same element is really exist in array
+      localStorage.setItem("arrayLocal", JSON.stringify(arrayLocal));
+    } else {
+      arrayLocal.push(dataObj);
+      localStorage.setItem("arrayLocal", JSON.stringify(arrayLocal));
+    }
+  } else {
+    let arrayLocal = [];
+    let dataObj = { name, price, image, num };
+    arrayLocal.push(dataObj);
+    localStorage.setItem("arrayLocal", JSON.stringify(arrayLocal));
+  }
+}
+// Delete From Local Storage Function
+function deleteFromLocalStorage(e) {
+  let quantity = e.target.previousElementSibling;
+  let num = parseInt(quantity.textContent);
+  if (num == 0) {
+    return;
+  }
+  num--;
+  quantity.textContent = num;
+  let name =
+    e.target.parentElement.firstElementChild.nextElementSibling.textContent;
+  let arrayLocal = localStorage.getItem("arrayLocal");
+  arrayLocal = JSON.parse(arrayLocal);
+  for (let i = 0; i < arrayLocal.length; i++) {
+    if (arrayLocal[i].name === name) {
+      if (arrayLocal[i].num > 1) {
+        arrayLocal[i].num = --arrayLocal[i].num;
+      } else {
+        arrayLocal.splice(i, 1);
+      }
+    }
+  }
+  localStorage.setItem("arrayLocal", JSON.stringify(arrayLocal));
 }
