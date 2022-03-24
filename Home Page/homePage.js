@@ -3,6 +3,14 @@ let mealContainer = document.createElement("div");
 let mealTitle = document.createElement("p");
 let mContainer = document.createElement("div");
 
+// hh
+let mealBtn = document.querySelector(".meal")
+let drinkBtn = document.querySelector(".drink")
+let dessertBtn = document.querySelector(".dessert")
+mealBtn.addEventListener("click", openMealCategory);
+drinkBtn.addEventListener("click", openDrinksCategory);
+dessertBtn.addEventListener("click", openDessertsCategory);
+// console.log(mealBtn);
 mealContainer.appendChild(mealTitle);
 root.appendChild(mealContainer);
  mealContainer.classList.add("categories-list");
@@ -270,14 +278,14 @@ function deleteFromLocalStorage(e) {
   }
 function openDrinksCategory() {
     localStorage.setItem("page", "drinks");
-    window.location = "../cPage3/page3.html";
+    window.location = "../Categories Page/categoriesPage.html";
   }
   
   function openMealCategory() {
     localStorage.setItem("page", "meal");
-    window.location = "../cPage3/page3.html";
+    window.location = "../Categories Page/categoriesPage.html";
   }
   function openDessertsCategory(){
     localStorage.setItem("page", "desserts");
-    window.location = "../cPage3/page3.html";
+    window.location = "../Categories Page/categoriesPage.html";
   }

@@ -127,6 +127,8 @@ body .back-bot {
 .allbutton {
   width: 72% !important;
   margin-bottom: 15px !important;
+  background-color: var(--navbuttonfocus-color) !important;
+  color: white !important;
 }
 
 .button-13 {
